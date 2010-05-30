@@ -1,0 +1,115 @@
+/*
+Copyright (c) 2007, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.3.1
+*/
+body {color:#000;background:#FFF;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+li {list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:'';}
+abbr,acronym {border:0;font-variant:normal;}
+sup,sub {line-height:-1px;vertical-align: text-top;}
+sub {vertical-align:text-bottom;}
+input, textarea, select{font-family:inherit;font-size:inherit;font-weight:inherit;}
+/**
+ * Percents could work for IE, but for backCompat purposes, we are using keywords.
+ * x-small is for IE6/7 quirks mode.
+ */
+/*body {font:13px/1.22 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}*/
+table {font-size:inherit;font:100%;}
+/**
+ * Bump up IE to get to 13px equivalent
+ */ 
+pre,code,kbd,samp,tt {font-family:monospace;*font-size:108%;line-height:99%;}
+
+
+
+
+
+
+
+body {
+  background:url('bg.gif');
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color:#444;
+}
+
+#card {
+  width:580px;
+  margin:100px auto 0 auto; 
+  background:#F7FFF1; 
+
+  border:1px solid #ccc;
+  -webkit-box-shadow:0 0 10px rgba(0,0,0,0.2);
+  -webkit-border-radius:5px;
+}
+
+.container {
+  padding:40px;
+  width:500px;
+  overflow:auto;
+}
+
+#sub-head {
+  border-top:1px solid #D3DBCE;
+  border-bottom:1px solid #D3DBCE;
+  background:#F0F8EB;
+}
+
+h1 {
+  color:#4C5547;
+  font-weight:bold;
+  font-size:40px;
+  
+  text-indent: -5000px;
+  background:url('header.png');
+  background-repeat:no-repeat;
+  margin: 0 0 10px -10px;
+}
+
+h2 {
+  font-size:16px;
+  font-weight:lighter !important;
+  display:block;
+  color:#666;
+  text-align:center;
+  margin-top:15px;
+}
+
+h4 {
+  font-size:12px;
+  color:#B0C0A5;
+  margin-bottom:3px;
+}
+
+.phone, .fax {
+  color: #F06558;
+  display:block;
+  font-size:25px;
+  margin-bottom:4px;
+}
+  .fax { font-size:15px; color:#444; }
+  
+  
+#phones { 
+  width:300px;
+  float:left;
+}
+#hours { 
+  width:200px; 
+  float:right;
+}
+
+  #hours dt {
+    width:100px;
+    float:left;
+  }
+  #hours dd {
+    
+  }
