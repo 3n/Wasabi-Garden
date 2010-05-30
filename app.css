@@ -40,9 +40,14 @@ body {
   color:#444;
 }
 
+p {
+  margin-bottom:15px;
+  font-weight:lighter;
+}
+
 #card {
   width:580px;
-  margin:100px auto 0 auto; 
+  margin:69px auto 0 auto; 
   background:#F7FFF1; 
 
   border:1px solid #ccc;
@@ -95,7 +100,6 @@ h4 {
   margin-bottom:4px;
 }
   .fax { font-size:15px; color:#444; }
-  
   
 #phones { 
   width:300px;
