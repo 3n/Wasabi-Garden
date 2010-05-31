@@ -37,12 +37,17 @@ pre,code,kbd,samp,tt {font-family:monospace;*font-size:108%;line-height:99%;}
 body {
   background:url('bg.gif');
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color:#444;
+  color:#555;
 }
 
 p {
   margin-bottom:15px;
   font-weight:lighter;
+  line-height:1.3em;
+}
+
+.clear {
+  clear:both;
 }
 
 #card {
@@ -56,9 +61,13 @@ p {
 }
 
 .container {
-  padding:40px;
+  padding:30px 40px;
   width:500px;
   overflow:auto;
+}
+
+.red {
+  color: #F06558 !important;
 }
 
 #sub-head {
@@ -90,30 +99,46 @@ h2 {
 h4 {
   font-size:12px;
   color:#B0C0A5;
-  margin-bottom:3px;
+  margin-bottom:2px;
 }
 
 .phone, .fax {
-  color: #F06558;
   display:block;
   font-size:25px;
-  margin-bottom:4px;
+  margin-bottom:10px;
 }
   .fax { font-size:15px; color:#444; }
   
 #phones { 
-  width:300px;
+  width:250px;
   float:left;
 }
 #hours { 
-  width:200px; 
+  width:250px; 
   float:right;
+  font-size:20px;
 }
 
   #hours dt {
+    line-height:1.5em;  
     width:100px;
     float:left;
+    clear:left;    
   }
   #hours dd {
-    
+    line-height:1.5em;    
+    float:left;
   }
+  
+.ampm {
+  font-size:12px;
+  font-weight:lighter;
+  margin-right:3px;
+}
+
+.salmon {
+  margin:-15px auto 0 auto;
+  background:url('salmon.png');
+  width:510px;
+  height:29px;
+}
