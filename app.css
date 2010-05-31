@@ -142,3 +142,33 @@ h4 {
   width:510px;
   height:29px;
 }
+
+#menus h3 {
+  clear:both;
+  margin-bottom:4px;
+}
+
+#menus dl {
+  position:relative;
+  margin-bottom:10px;
+  overflow:auto;
+}
+
+#menus dl dt, #menus dl dd {
+  line-height:1.6em;
+  border-bottom:1px dotted #ddd;  
+}
+#menus dl dt {
+  float:left;
+  clear:left;
+  width:463px;
+  border-bottom:1px dotted #ddd;
+}
+#menus dl dd {
+  float:right;
+  clear:right;
+}
+
+#photos {
+/*  padding-top:20px;*/
+}
