@@ -57,7 +57,7 @@ p {
 
   border:1px solid #ccc;
   -webkit-box-shadow:0 0 10px rgba(0,0,0,0.2);
-  -webkit-border-radius:5px;
+  -webkit-border-radius:8px;
 }
 
 .container {
@@ -146,6 +146,11 @@ h4 {
 #menus h3 {
   clear:both;
   margin-bottom:4px;
+  font-size:130%;
+  font-weight:bold;
+  color:#91AD86;
+  letter-spacing:1px;
+  text-indent:-1px;
 }
 
 #menus dl {
@@ -156,17 +161,18 @@ h4 {
 
 #menus dl dt, #menus dl dd {
   line-height:1.6em;
-  border-bottom:1px dotted #ddd;  
 }
 #menus dl dt {
   float:left;
   clear:left;
-  width:463px;
+  width:100%;
   border-bottom:1px dotted #ddd;
 }
 #menus dl dd {
   float:right;
   clear:right;
+  font-family:Georgia;
+  margin-top:-1.6em;
 }
 
 #photos {
