@@ -1,5 +1,5 @@
 window.addEvent('domready', function(){
-  new MerryGoRound('photos', {
+  var merry = new MerryGoRound('photos', {
     'selector'   : 'img',
     'per_page'   : 1,
     'page_controls' : true,
@@ -7,4 +7,6 @@ window.addEvent('domready', function(){
       duration : 300
     }
   });
+  
+  merry.next.periodical(3000, merry);
 });

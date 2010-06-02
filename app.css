@@ -182,9 +182,9 @@ h4 {
 .merry-go-round-wrapper { 
   height:270px !important;  
 }
-.merry-go-round-next {
-}
-.merry-go-round-previous {
+.merry-go-round-next, .merry-go-round-previous {
+  cursor:pointer;
+  display:none !important;
 }
 .merry-go-round-pagination {
   margin:5px auto !important;
