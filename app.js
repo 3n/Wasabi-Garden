@@ -11,7 +11,7 @@ var open_or_closed = function(){
     if (hour > 12 && hour < 21) 
       open = true;
       
-  // console.log(open ? 'open' : 'closed');
+  $('open-or-closed').set('html', open ? 'open' : 'closed').set('class', open ? 'open' : 'closed');
 }
 
 window.addEvent('domready', function(){  

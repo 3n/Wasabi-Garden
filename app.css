@@ -200,3 +200,16 @@ h4 {
   .merry-go-round-current-page {
     background-position:-15px -14px !important;
   }
+  
+#open-or-closed.closed {
+  color:salmon;
+  font-weight:bold;
+}
+#open-or-closed.open {
+  color:#97A38F;
+  font-weight:bold;  
+}
+#currently {
+  font-size:90%;
+  font-weight:lighter;
+}
