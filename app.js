@@ -29,7 +29,7 @@ window.addEvent('domready', function(){
   
   // todo if loaded already
   $('photos').getLast().addEvent('load', function(){
-    merry.next.periodical(3000, merry);
+    merry.next.periodical(4000, merry);
   });
   
   if ($('photos').getLast().complete) $('photos').getLast().fireEvent('load');
