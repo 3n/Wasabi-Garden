@@ -26,5 +26,7 @@ window.addEvent('domready', function(){
     }
   });
   
-  merry.next.periodical(3000, merry);
+  $('photos').getFirst().addEvent('load', function(){
+    merry.next.periodical(3000, merry);
+  });
 });
