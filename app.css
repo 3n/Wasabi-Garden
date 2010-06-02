@@ -190,12 +190,13 @@ h4 {
   margin:5px auto !important;
 }
 .merry-go-round-pagination div {
-  width:10px;
-  height:10px;
-  background:black;
+  width:15px;
+  height:15px;
+  background:url('pagination.png');
   float:left;
+  cursor:pointer;
   margin-right:3px;
 }
   .merry-go-round-current-page {
-    background:red !important;
+    background-position:-15px -14px !important;
   }
