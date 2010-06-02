@@ -11,7 +11,8 @@ var open_or_closed = function(){
     if (hour > 12 && hour < 21) 
       open = true;
       
-  $('open-or-closed').set('html', open ? 'open' : 'closed').set('class', open ? 'open' : 'closed');
+  var str = open ? 'open' : 'closed';    
+  $('open-or-closed').set('html', str).set('class', str);
 }
 
 window.addEvent('domready', function(){  
@@ -26,7 +27,7 @@ window.addEvent('domready', function(){
     }
   });
   
-  $('photos').getFirst().addEvent('load', function(){
+  $('photos').getLast().addEvent('load', function(){
     merry.next.periodical(3000, merry);
   });
 });
