@@ -151,6 +151,11 @@ h4 {
   letter-spacing:1px;
   text-indent:-1px;
 }
+  #menus h3 span {
+    display:block;
+    font-size:60% !important;
+    font-weight:lighter;
+  }
 
 #menus dl {
   position:relative;
@@ -168,6 +173,11 @@ h4 {
   border-bottom:1px dotted #ddd;
   font-size:85%;
 }
+  #menus dl dt span {
+    display:block;
+    font-size:80%;
+    color:#aaa;
+  }
 #menus dl dd {
   float:right;
   clear:right;
