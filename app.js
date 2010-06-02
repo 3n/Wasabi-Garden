@@ -1,4 +1,22 @@
-window.addEvent('domready', function(){
+var open_or_closed = function(){
+  var date = new Date(),
+      day = date.getDay(),
+      hour = date.getHours(),
+      open = false;
+
+  if (day > 0 && day < 7)
+    if (hour > 11 && hour < 22) 
+      open = true;
+  else
+    if (hour > 12 && hour < 21) 
+      open = true;
+      
+  // console.log(open ? 'open' : 'closed');
+}
+
+window.addEvent('domready', function(){  
+  open_or_closed();
+  
   var merry = new MerryGoRound('photos', {
     'selector'   : 'img',
     'per_page'   : 1,
