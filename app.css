@@ -147,7 +147,6 @@ h4 {
   clear:both;
   margin-bottom:4px;
   font-size:130%;
-  font-weight:bold;
   color:#91AD86;
   letter-spacing:1px;
   text-indent:-1px;
@@ -167,6 +166,7 @@ h4 {
   clear:left;
   width:100%;
   border-bottom:1px dotted #ddd;
+  font-size:85%;
 }
 #menus dl dd {
   float:right;
