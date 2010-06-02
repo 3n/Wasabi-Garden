@@ -178,3 +178,24 @@ h4 {
 #photos {
 /*  padding-top:20px;*/
 }
+
+.merry-go-round-wrapper { 
+  height:270px !important;  
+}
+.merry-go-round-next {
+}
+.merry-go-round-previous {
+}
+.merry-go-round-pagination {
+  margin:5px auto !important;
+}
+.merry-go-round-pagination div {
+  width:10px;
+  height:10px;
+  background:black;
+  float:left;
+  margin-right:3px;
+}
+  .merry-go-round-current-page {
+    background:red !important;
+  }
