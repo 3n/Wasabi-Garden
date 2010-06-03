@@ -177,6 +177,8 @@ h4 {
   width:100%;
   border-bottom:1px dotted #ddd;
   font-size:85%;
+  line-height:1.3em;
+  padding:4px 0;
 }
   #menus dl dt span {
     display:block;
