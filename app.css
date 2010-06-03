@@ -143,6 +143,11 @@ h4 {
   height:29px;
 }
 
+#menus h2 {
+  font-size:150%;
+  text-align:center;
+  color:#F06558;
+}
 #menus h3 {
   clear:both;
   margin-bottom:4px;
