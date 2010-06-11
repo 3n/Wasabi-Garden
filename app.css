@@ -217,16 +217,27 @@ h4 {
   .merry-go-round-current-page {
     background-position:-15px -14px !important;
   }
-  
-#open-or-closed.closed {
-  color:salmon;
+
+#open-or-closed {
   font-weight:bold;
+  color:white;
+  padding:1px 6px 4px 6px; 
+  margin-left:30px;
+  -webkit-border-radius:10px;
+  -webkit-box-shadow:0 -1px 1px rgba(0,0,0,0.5);
+  text-shadow:0 1px rgba(0,0,0,0.5);
+}  
+#open-or-closed.closed {
+  background-color:salmon;
 }
 #open-or-closed.open {
-  color:#97A38F;
-  font-weight:bold;  
+  background-color:#97A38F;
 }
 #currently {
   font-size:90%;
   font-weight:lighter;
+  margin-top:10px;
+  display:block;
+  width:250px; 
+  float:right;  
 }
