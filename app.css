@@ -241,3 +241,9 @@ h4 {
   width:250px; 
   float:right;  
 }
+
+
+#menus-tabs {
+  border-top:1px solid #D3DBCE;
+  border-bottom:1px solid #D3DBCE; 
+}
