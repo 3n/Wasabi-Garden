@@ -49,7 +49,14 @@ var open_or_closed = function(){
       
   var str = open ? 'open' : 'closed';    
   $('open-or-closed').set('html', str).set('class', str);
-}
+};
+
+var make_tabz = function(){
+  var tabz = new Tabz( ['lunch-tab', 'lunch'], ['dinner-tab', 'dinner'] );  
+  var hour = new Date().getHours();
+
+  tabz.activateIndex(hour < 15 ? 0 : 1);
+};
 
 window.addEvent('domready', function(){  
   open_or_closed();
@@ -70,5 +77,5 @@ window.addEvent('domready', function(){
   
   if ($('photos').getLast().complete) $('photos').getLast().fireEvent('load');
   
-  new Tabz( ['lunch-tab', 'lunch'], ['dinner-tab', 'dinner'] ).activateIndex(0);
+  make_tabz();
 });

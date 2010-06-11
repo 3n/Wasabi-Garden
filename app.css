@@ -247,3 +247,7 @@ h4 {
   border-top:1px solid #D3DBCE;
   border-bottom:1px solid #D3DBCE; 
 }
+
+#menus-tabs div.active {
+  color:red;
+}
