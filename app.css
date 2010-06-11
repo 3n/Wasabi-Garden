@@ -244,8 +244,14 @@ h4 {
 
 
 #menus-tabs {
-  border-top:1px solid #D3DBCE;
   border-bottom:1px solid #D3DBCE; 
+  overflow:auto;
+}
+
+#menus-tabs div {
+  float:left;
+  font-size:90%;
+  cursor:pointer;
 }
 
 #menus-tabs div.active {
