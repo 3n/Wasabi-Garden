@@ -244,17 +244,14 @@ h4 {
 }
 
 
-#menus-tabs {
-  border-bottom:1px solid #D3DBCE; 
-  overflow:auto;
-}
-
-#menus-tabs div {
-  float:left;
+#now-serving {
   font-size:90%;
-  cursor:pointer;
+  text-align:center;
+  font-family:Georgia;
+  font-style:italic;
+  margin-bottom:25px;
 }
-
-#menus-tabs div.active {
-  color:red;
+#now-serving a {
+  text-decoration:underline;
+  cursor:pointer;
 }
