@@ -41,12 +41,12 @@ window.addEvent('domready', function(){
     }
   });
   
-  // todo if loaded already
+  var slideshow;
   $('photos').getLast().addEvent('load', function(){
-    merry.next.periodical(3500, merry);
+    slideshow = merry.next.periodical(3500, merry);
   });
   
-  if ($('photos').getLast().complete) $('photos').getLast().fireEvent('load');
+  if ($('photos').getLast().complete && !slideshow) $('photos').getLast().fireEvent('load');
   
   now_serving();
 });
