@@ -29,9 +29,7 @@ var now_serving = function(){
   });
 };
 
-window.addEvent('domready', function(){  
-  open_or_closed();
-  
+var slideshow = function(){
   var merry = new MerryGoRound('photos', {
     'selector'   : 'img',
     'per_page'   : 1,
@@ -41,12 +39,24 @@ window.addEvent('domready', function(){
     }
   });
   
-  var slideshow;
-  $('photos').getLast().addEvent('load', function(){
-    slideshow = slideshow || merry.next.periodical(3500, merry);
-  });
+  var slideshow,
+      start_the_show = function(){
+        slideshow = slideshow || merry.next.periodical(3500, merry);
+      };
+  
+  $('photos').getLast().addEvent('load', start_the_show);
   
   if ($('photos').getLast().complete) $('photos').getLast().fireEvent('load');
   
+  $$('.merry-go-round-pagination').addEvent('click', function(){
+    $clear(slideshow);
+    slideshow = null;
+    start_the_show.delay(1000);
+  });
+};
+
+window.addEvent('domready', function(){  
+  open_or_closed();  
+  slideshow();
   now_serving();
 });
