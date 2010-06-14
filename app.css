@@ -201,8 +201,8 @@ h4 {
   margin-top:-1.6em;
 }
 
-#photos {
-/*  padding-top:20px;*/
+#photos img {
+  width:580px;
 }
 
 .merry-go-round-wrapper { 
