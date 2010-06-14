@@ -43,10 +43,10 @@ window.addEvent('domready', function(){
   
   var slideshow;
   $('photos').getLast().addEvent('load', function(){
-    slideshow = merry.next.periodical(3500, merry);
+    slideshow = slideshow || merry.next.periodical(3500, merry);
   });
   
-  if ($('photos').getLast().complete && !slideshow) $('photos').getLast().fireEvent('load');
+  if ($('photos').getLast().complete) $('photos').getLast().fireEvent('load');
   
   now_serving();
 });
