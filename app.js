@@ -2,15 +2,8 @@ var open_or_closed = function(){
   var date = new Date(),
       day = date.getDay(),
       hour = date.getHours(),
-      open = false;
+      open = day > 0 && day < 7 && hour > 11 && hour < 22;
 
-  if (day > 0 && day < 7)
-    if (hour > 11 && hour < 22) 
-      open = true;
-  else
-    if (hour > 16 && hour < 21) 
-      open = true;
-      
   var str = open ? 'open' : 'closed';    
   $('open-or-closed').set('html', str).set('class', str);
 };
