@@ -8,7 +8,7 @@ var open_or_closed = function(){
     if (hour > 11 && hour < 22) 
       open = true;
   else
-    if (hour > 16 && hour < 21) 
+    if (hour > 12 && hour < 21) 
       open = true;
       
   var str = open ? 'open' : 'closed';    
